@@ -3,7 +3,7 @@ import { TSkillChipsProps } from "../types/TSkillChips";
 
 const SkillChips: React.FC<TSkillChipsProps> = ({ skills }) => {
     return <Stack spacing={{ xs: 1, sm: 2 }} direction="row" useFlexGap flexWrap="wrap">
-        {skills.map(skill => <Chip label={skill} variant="outlined" color="info" />)}
+        {skills.map(skill => <Chip label={skill} variant="outlined" color="info" key={skill} />)}
     </Stack>;
 };
 
