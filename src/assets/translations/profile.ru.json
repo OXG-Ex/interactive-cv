@@ -1,0 +1,26 @@
+{
+  "fullName": "Назаренко Семён",
+  "position": "React-разработчик",
+  "aboutMeText": "Хорошо понимаю суть практического применения ООП, SOLID, паттернов проектирования. Умею разбираться в чужом коде. Есть опыт работы в мультиязычной команде, проведение ретроспектив. Есть опыт проектирования архитектуры веб-приложений и переиспользуемых компонентов. Уровень английского B2.",
+
+  "experienceList": [
+    "- CI/CD (GitHub Actions, Azure Pipelines)",
+    "- Мобильной разработке на React-Native + Expo.",
+    "- Руководстве небольшой командой разработчиков.",
+    "- Обучении новых специалистов и введении их в проект."
+  ],
+  "hardSkillsList": [
+    "- Высокий уровень знания React + Redux",
+    "- JavaScript ES7+",
+    "- Typescript",
+    "- Опыт работы с препроцессорами LESS/SCSS/SASS",
+    "- Webpack, Babel, Rollup.js",
+    "- Знание протокола HTTP/HTTPS, опыт работы с RestAPI, GraphQL API",
+    "- React Query",
+    "- Next JS",
+    "- Electron JS",
+    "- Material UI",
+    "- Node.js",
+    "- React Testing Library, Jest"
+  ]
+}
