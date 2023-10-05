@@ -2,7 +2,7 @@
 import { Box, Container, Grid, Stack } from '@mui/material';
 import { StyledBackgroundContainer } from './shared/styled';
 import backgroundImage from "./assets/background/background_1.jpg";
-import { AboutMe, MainInfo, UserPhoto } from './modules';
+import { AboutMe, MainInfo, UserPhoto, WhatIDo } from './modules';
 
 import './main.css';
 
@@ -41,6 +41,10 @@ function App() {
             <AboutMe />
           </Grid>
         </Grid>
+      </Container>
+
+      <Container maxWidth="lg">
+        <WhatIDo />
       </Container>
 
     </Stack >
