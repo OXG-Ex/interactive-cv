@@ -4,7 +4,7 @@ import { TCardProps } from "../types/TCard";
 
 const Card: React.FC<TCardProps> = (props) => {
     const { icon, text, title } = props;
-    return <MuiCard sx={{ width: 'auto', height: '100%' }} elevation={2}>
+    return <MuiCard sx={{ height: '100%' }} elevation={2}>
         <CardContent>
             {icon}
             <Typography variant="h4">{title}</Typography>
