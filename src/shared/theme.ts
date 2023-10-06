@@ -26,7 +26,17 @@ export const theme = createTheme({
                 }
             }
         },
-
+        MuiLinearProgress: {
+            styleOverrides: {
+                bar: {
+                    borderRadius: 4
+                },
+                root: {
+                    height: 8,
+                    borderRadius: 4
+                }
+            }
+        }
     },
     spacing: 8,
     typography: {

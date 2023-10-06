@@ -3,7 +3,8 @@ import { Box, Container, Grid, Stack } from '@mui/material';
 import { StyledBackgroundContainer } from './shared/styled';
 import backgroundImage1 from "./assets/background/background_1.jpg";
 import backgroundImage2 from "./assets/background/background_3.jpg";
-import { AboutMe, MainInfo, UserPhoto, WhatIDo, ProjectsList } from './modules';
+import { AboutMe, MainInfo, UserPhoto, WhatIDo, ProjectsList, SkillsList } from './modules';
+import { SkillType } from './modules/SkillsList/enums/SkillType';
 
 import './main.css';
 
@@ -65,7 +66,7 @@ function App() {
               imageUrl: 'https://mastersoftwaretesting.com/_next/image?url=%2Fblog%2Fstatic-testing-process.png&w=3840&q=75',
               link: 'https://github.com/Learus/react-material-ui-carousel',
               name: 'Super Project 2',
-              tags: ['SuperLongTagSuperLongTagSuperLongTagSuperLongTag', 'Css-in-JS', 'Css-in-JS', 'Css-in-JS', 'Css-in-JS', 'Css-in-JS', 'JS'],
+              tags: ['SuperLongTagSuperLongTagSuperLongTagSuperLongTag', 'Css-in-JS1', 'Css-in-JS2', 'Css-in-JS3', 'Css-in-JS4', 'Css-in-JS5', 'JS6'],
               type: 'commercial'
             },
 
@@ -81,6 +82,51 @@ function App() {
           ]} />
         </Container>
       </StyledBackgroundContainer>
+
+      <Container maxWidth="lg">
+        <SkillsList skills={[
+          {
+            percent: 82,
+            title: "Алкоголизм",
+            type: SkillType.Hard
+          },
+          {
+            percent: 10,
+            title: "Жадность до денег",
+            type: SkillType.Hard
+          },
+          {
+            percent: 90,
+            title: "Токсичность",
+            type: SkillType.Hard
+          },
+          {
+            percent: 55.55555,
+            title: "Шизофрения",
+            type: SkillType.Hard
+          },
+          {
+            percent: 99,
+            title: "Наследие 🤡",
+            type: SkillType.Hard
+          },
+          {
+            percent: 80,
+            title: "Самоуверенность",
+            type: SkillType.Soft
+          },
+          {
+            percent: 42,
+            title: "Работа в комманде",
+            type: SkillType.Soft
+          },
+          {
+            percent: 90,
+            title: "ЧСВ",
+            type: SkillType.Soft
+          },
+        ]} />
+      </Container>
 
     </Stack >
   )
