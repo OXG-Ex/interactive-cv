@@ -2,8 +2,9 @@
 import { Box, Container, Grid, Stack } from '@mui/material';
 import { StyledBackgroundContainer } from './shared/styled';
 import backgroundImage1 from "./assets/background/background_1.jpg";
-import backgroundImage2 from "./assets/background/background_3.jpg";
-import { AboutMe, MainInfo, UserPhoto, WhatIDo, ProjectsList, SkillsList } from './modules';
+import backgroundImage2 from "./assets/background/background_2.jpg";
+import backgroundImage3 from "./assets/background/background_3.jpg";
+import { AboutMe, MainInfo, UserPhoto, WhatIDo, ProjectsList, SkillsList, EducationAndExperience } from './modules';
 import { SkillType } from './modules/SkillsList/enums/SkillType';
 
 import './main.css';
@@ -128,6 +129,46 @@ function App() {
         ]} />
       </Container>
 
+      <StyledBackgroundContainer backgroundImage={backgroundImage3}>
+        <Container maxWidth="lg">
+          <EducationAndExperience education={[
+            {
+              description: 'Шарага_Шарага_Шарага_Шарага_Шарага_Шарага_Шарага_Шарага_Шарага_Шарага_Шарага_Шарага_',
+              institution: 'ТИ (Филлиал) ДГТУ',
+              specialization: '09.02.03 ПКС',
+              years: '2017-2021',
+            },
+            {
+              description: 'КУРСЫ_КУРСЫ_КУРСЫ_КУРСЫ_КУРСЫ_КУРСЫ_КУРСЫ_КУРСЫ_КУРСЫ_КУРСЫ_КУРСЫ_КУРСЫ_КУРСЫ_КУРСЫ_',
+              institution: '[ITVDN]',
+              specialization: 'React разработчик',
+              years: '2022',
+            },
+            {
+              description: 'Вышка_Вышка_Вышка_Вышка_Вышка_Вышка_Вышка_Вышка_Вышка_Вышка_Вышка_Вышка_Вышка_Вышка_Вышка_',
+              institution: 'ТИ (Филлиал) ДГТУ ',
+              specialization: '09.03.02 ВТиП',
+              years: '2021-2025',
+            },
+          ]}
+            experience={[
+              {
+                companyName: '7pace',
+                position: 'FullStack-dev',
+                responsibilities: ['make', 'some', 'noize'],
+                years: '2020-2023',
+                country: 'GE'
+              },
+              {
+                companyName: 'Sveak',
+                position: 'Frontend-dev',
+                responsibilities: ['make', 'some', 'noize'],
+                years: 'апрель 2023 -  октябрь 2023',
+                country: 'RU'
+              }
+            ]} />
+        </Container>
+      </StyledBackgroundContainer>
     </Stack >
   )
 }
