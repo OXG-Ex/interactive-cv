@@ -1,4 +1,4 @@
-import { createTheme } from "@mui/material";
+import { createTheme } from '@mui/material';
 
 export const theme = createTheme({
     palette: {
@@ -17,32 +17,32 @@ export const theme = createTheme({
                     borderRadius: 24,
                     height: 48,
                     padding: '0 30px',
-                    width: ' fit-content'
+                    width: ' fit-content',
                 },
                 contained: {
                     border: 0,
                     boxShadow: ' 2px #0ede5e',
                     color: 'white',
-                }
-            }
+                },
+            },
         },
         MuiLinearProgress: {
             styleOverrides: {
                 bar: {
-                    borderRadius: 4
+                    borderRadius: 4,
                 },
                 root: {
                     height: 8,
-                    borderRadius: 4
-                }
-            }
-        }
+                    borderRadius: 4,
+                },
+            },
+        },
     },
     spacing: 8,
     typography: {
         fontFamily: 'Raleway',
     },
     shape: {
-        borderRadius: 0,
-    }
+        borderRadius: 8,
+    },
 });

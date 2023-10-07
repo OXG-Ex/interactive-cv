@@ -1,4 +1,4 @@
-import { ChipProps } from "@mui/material";
+import { ChipProps } from '@mui/material';
 
 export type TChipsProps = {
     items: string[];

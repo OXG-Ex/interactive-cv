@@ -1,5 +1,5 @@
-import { EducationCard, ExperienceCard } from "../components";
-import { TEducationAndExperienceProps } from "../types/TEducationAndExperience";
+import { EducationCard, ExperienceCard } from '../components';
+import { TEducationAndExperienceProps } from '../types/TEducationAndExperience';
 
 export const useEducationAndExperience = (props: TEducationAndExperienceProps) => {
     const { education, experience } = props;
@@ -8,4 +8,4 @@ export const useEducationAndExperience = (props: TEducationAndExperienceProps) =
     const experienceCards = experience.map((item) => <ExperienceCard {...item} key={item.years} />);
 
     return { educationCards, experienceCards };
-}
+};

@@ -1,4 +1,4 @@
 export enum SkillType {
     Hard,
-    Soft
+    Soft,
 }

@@ -3,7 +3,7 @@ export type TEducationInfo = {
     years: string;
     description: string;
     institution: string;
-}
+};
 
 export type TExperienceInfo = {
     companyName: string;
@@ -11,9 +11,9 @@ export type TExperienceInfo = {
     years: string;
     responsibilities: string[];
     country?: string;
-}
+};
 
 export type TEducationAndExperienceProps = {
     experience: TExperienceInfo[];
     education: TEducationInfo[];
-}
+};
