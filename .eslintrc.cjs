@@ -15,6 +15,9 @@ module.exports = {
         'prettier/prettier': [
             'warn',
             {
+                // Duplicate config to use with "eslint --fix"
+                // Config for VS Code "format-on-save" feature placed in .prettierrc
+                // TODO: Find a way to avoid duplication of configs
                 trailingComma: 'es5',
                 singleQuote: true,
                 semi: true,

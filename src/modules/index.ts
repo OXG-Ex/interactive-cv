@@ -5,3 +5,4 @@ export { default as WhatIDo } from './WhatIDo';
 export { default as ProjectsList } from './ProjectsList';
 export { default as SkillsList } from './SkillsList';
 export { default as EducationAndExperience } from './EducationAndExperience';
+export { default as ContactMe } from './ContactMe';

@@ -4,6 +4,7 @@ import backgroundImage1 from './assets/background/background_1.jpg';
 import backgroundImage2 from './assets/background/background_2.jpg';
 import backgroundImage3 from './assets/background/background_3.jpg';
 import programmerBackground from './assets/background/programmer.png';
+import mapBackground from './assets/background/map-color-overlay.png';
 import avatar from './assets/avatar/Avatar.jpg';
 import {
     AboutMe,
@@ -13,15 +14,17 @@ import {
     ProjectsList,
     SkillsList,
     EducationAndExperience,
+    ContactMe,
 } from './modules';
 import { SkillType } from './modules/SkillsList/enums/SkillType';
 
 import './main.css';
+import { AlternateEmail, LocalPhone, Telegram } from '@mui/icons-material';
 
 function App() {
     return (
         <Stack gap={12}>
-            <StyledBackgroundContainer backgroundImage={backgroundImage1}>
+            <StyledBackgroundContainer applyDarkening backgroundImage={backgroundImage1}>
                 <Container maxWidth="lg">
                     <Grid container spacing={2} p={2}>
                         <Grid
@@ -85,7 +88,7 @@ function App() {
                 <WhatIDo />
             </Container>
 
-            <StyledBackgroundContainer backgroundImage={backgroundImage2}>
+            <StyledBackgroundContainer applyDarkening backgroundImage={backgroundImage2}>
                 <Container maxWidth="lg">
                     <ProjectsList
                         items={[
@@ -181,7 +184,7 @@ function App() {
                 />
             </Container>
 
-            <StyledBackgroundContainer backgroundImage={backgroundImage3}>
+            <StyledBackgroundContainer backgroundImage={backgroundImage3} applyDarkening>
                 <Container maxWidth="lg">
                     <EducationAndExperience
                         education={[
@@ -221,6 +224,29 @@ function App() {
                                 responsibilities: ['make', 'some', 'noize'],
                                 years: 'апрель 2023 -  октябрь 2023',
                                 country: 'RU',
+                            },
+                        ]}
+                    />
+                </Container>
+            </StyledBackgroundContainer>
+
+            <StyledBackgroundContainer
+                backgroundImage={mapBackground}
+                sx={{ backgroundSize: 'contain' }}
+            >
+                <Container maxWidth="lg">
+                    <ContactMe
+                        contacts={[
+                            { icon: <Telegram />, info: '@oxgex', title: 'Telegram' },
+                            {
+                                icon: <AlternateEmail />,
+                                info: 'semes212@gamil.com',
+                                title: 'Email',
+                            },
+                            {
+                                icon: <LocalPhone />,
+                                info: '8-(999)-690-17-59',
+                                title: 'Телефон',
                             },
                         ]}
                     />
