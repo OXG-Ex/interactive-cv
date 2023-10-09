@@ -10,9 +10,9 @@ const SoftSkill: React.FC<TSoftSkillProps> = ({ skill }) => {
                 <CircularProgress
                     value={percent}
                     color="primary"
-                    size={120}
+                    size={125}
                     thickness={3}
-                    variant="determinate"
+                    variant="indeterminate"
                     sx={{
                         borderRadius: '100%',
                         boxShadow: 'inset 0 0 0px 8px #105f2f',

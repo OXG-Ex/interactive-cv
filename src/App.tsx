@@ -1,15 +1,14 @@
-import { Box, Container, Grid, Stack } from '@mui/material';
+import { Container, Stack } from '@mui/material';
+import { Fade, Slide } from 'react-awesome-reveal';
 import { StyledBackgroundContainer } from './shared/styled';
 import backgroundImage1 from './assets/background/background_1.jpg';
 import backgroundImage2 from './assets/background/background_2.jpg';
 import backgroundImage3 from './assets/background/background_3.jpg';
-import programmerBackground from './assets/background/programmer.png';
 import mapBackground from './assets/background/map-color-overlay.png';
 import avatar from './assets/avatar/Avatar.jpg';
 import {
     AboutMe,
     MainInfo,
-    UserPhoto,
     WhatIDo,
     ProjectsList,
     SkillsList,
@@ -17,124 +16,80 @@ import {
     ContactMe,
 } from './modules';
 import { SkillType } from './modules/SkillsList/enums/SkillType';
-
-import './main.css';
 import { AlternateEmail, LocalPhone, Telegram } from '@mui/icons-material';
 
 function App() {
     return (
         <Stack gap={12}>
             <StyledBackgroundContainer applyDarkening backgroundImage={backgroundImage1}>
-                <Container maxWidth="lg">
-                    <Grid container spacing={2} p={2}>
-                        <Grid
-                            item
-                            md={6}
-                            sm={12}
-                            display={'flex'}
-                            alignItems={'center'}
-                            justifyContent={'center'}
-                        >
-                            <MainInfo />
-                        </Grid>
-                        <Grid
-                            item
-                            md={6}
-                            sm={12}
-                            display={'flex'}
-                            alignItems={'center'}
-                            justifyContent={'center'}
-                        >
-                            <UserPhoto avatarUrl={avatar} avatarAltText="Semyon Nazarenko" />
-                        </Grid>
-                    </Grid>
-                </Container>
+                <Fade duration={800}>
+                    <Container maxWidth="lg">
+                        <MainInfo avatarUrl={avatar} fullName="Назаренко Семён" />
+                    </Container>
+                </Fade>
             </StyledBackgroundContainer>
 
-            <Container maxWidth="lg">
-                <Grid container spacing={8}>
-                    <Grid
-                        item
-                        md={6}
-                        sm={12}
-                        display={'flex'}
-                        alignItems={'center'}
-                        justifyContent={'center'}
-                    >
-                        <Box
-                            component="img"
-                            sx={{
-                                maxHeight: 'auto',
-                                maxWidth: '100%',
-                            }}
-                            alt="programmer art"
-                            src={programmerBackground}
-                        />
-                    </Grid>
-                    <Grid
-                        item
-                        md={6}
-                        sm={12}
-                        display={'flex'}
-                        alignItems={'center'}
-                        justifyContent={'center'}
-                    >
-                        <AboutMe />
-                    </Grid>
-                </Grid>
-            </Container>
+            <Slide direction="right">
+                <Container maxWidth="lg">
+                    <AboutMe />
+                </Container>
+            </Slide>
 
             <Container maxWidth="lg">
-                <WhatIDo />
+                <Fade direction="left">
+                    <WhatIDo />
+                </Fade>
             </Container>
 
             <StyledBackgroundContainer applyDarkening backgroundImage={backgroundImage2}>
-                <Container maxWidth="lg">
-                    <ProjectsList
-                        items={[
-                            {
-                                description:
-                                    'super Project_super Project_super Project_super Project_super Project_super Project_super Project_super Project_super Project_super Project_super Project_',
-                                imageUrl:
-                                    'https://www.techwyse.com/wp-content/uploads/2013/09/static-vs-dinamic-url.jpg',
-                                link: 'https://github.com/Learus/react-material-ui-carousel',
-                                name: 'Super Project 1',
-                                area: 'desktop',
-                                tags: ['Html, Css', 'JS'],
-                                type: 'pet_project',
-                            },
+                <Fade>
+                    <Container maxWidth="lg">
+                        <ProjectsList
+                            items={[
+                                {
+                                    description:
+                                        'super Project_super Project_super Project_super Project_super Project_super Project_super Project_super Project_super Project_super Project_super Project_',
+                                    imageUrl:
+                                        'https://www.techwyse.com/wp-content/uploads/2013/09/static-vs-dinamic-url.jpg',
+                                    link: 'https://github.com/Learus/react-material-ui-carousel',
+                                    name: 'Super Project 1',
+                                    area: 'desktop',
+                                    tags: ['Html, Css', 'JS'],
+                                    type: 'pet_project',
+                                },
 
-                            {
-                                description:
-                                    'super Project_super Project_super Project_super Project_super Project_super Project_super Project_super Project_super Project_super Project_super Project_',
-                                imageUrl:
-                                    'https://mastersoftwaretesting.com/_next/image?url=%2Fblog%2Fstatic-testing-process.png&w=3840&q=75',
-                                link: 'https://github.com/Learus/react-material-ui-carousel',
-                                name: 'Super Project 2',
-                                tags: [
-                                    'SuperLongTagSuperLongTagSuperLongTagSuperLongTag',
-                                    'Css-in-JS1',
-                                    'Css-in-JS2',
-                                    'Css-in-JS3',
-                                    'Css-in-JS4',
-                                    'Css-in-JS5',
-                                    'JS6',
-                                ],
-                                type: 'commercial',
-                            },
+                                {
+                                    description:
+                                        'super Project_super Project_super Project_super Project_super Project_super Project_super Project_super Project_super Project_super Project_super Project_',
+                                    imageUrl:
+                                        'https://mastersoftwaretesting.com/_next/image?url=%2Fblog%2Fstatic-testing-process.png&w=3840&q=75',
+                                    link: 'https://github.com/Learus/react-material-ui-carousel',
+                                    name: 'Super Project 2',
+                                    tags: [
+                                        'SuperLongTagSuperLongTagSuperLongTagSuperLongTag',
+                                        'Css-in-JS1',
+                                        'Css-in-JS2',
+                                        'Css-in-JS3',
+                                        'Css-in-JS4',
+                                        'Css-in-JS5',
+                                        'JS6',
+                                    ],
+                                    type: 'commercial',
+                                },
 
-                            {
-                                description:
-                                    'super Project_super Project_super Project_super Project_super Project_super Project_super Project_super Project_super Project_super Project_super Project_',
-                                imageUrl:
-                                    'https://mastersoftwaretesting.com/_next/image?url=%2Fblog%2Fstatic-testing-vs-dynamic-testing.png&w=3840&q=75',
-                                link: 'https://github.com/Learus/react-material-ui-carousel',
-                                name: 'Super Project 3',
-                                area: 'mobile',
-                            },
-                        ]}
-                    />
-                </Container>
+                                {
+                                    description:
+                                        'super Project_super Project_super Project_super Project_super Project_super Project_super Project_super Project_super Project_super Project_super Project_',
+                                    imageUrl:
+                                        'https://mastersoftwaretesting.com/_next/image?url=%2Fblog%2Fstatic-testing-vs-dynamic-testing.png&w=3840&q=75',
+                                    link: 'https://github.com/Learus/react-material-ui-carousel',
+                                    name: 'Super Project 3',
+                                    area: 'mobile',
+                                },
+                            ]}
+                        />
+                    </Container>
+                </Fade>
             </StyledBackgroundContainer>
 
             <Container maxWidth="lg">
@@ -252,6 +207,8 @@ function App() {
                     />
                 </Container>
             </StyledBackgroundContainer>
+
+            <div></div>
         </Stack>
     );
 }

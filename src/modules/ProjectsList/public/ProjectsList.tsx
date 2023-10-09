@@ -9,7 +9,7 @@ const ProjectsList: React.FC<TProjectsListProps> = (props) => {
         <Stack alignItems="center" gap={4} p={2}>
             <Typography variant="h3">Мои проекты</Typography>
             <Box width={'100%'}>
-                <Carousel animation="slide" stopAutoPlayOnHover fullHeightHover>
+                <Carousel animation="slide" stopAutoPlayOnHover fullHeightHover autoPlay={false}>
                     {items.map((item) => (
                         <ProjectItem item={item} key={item.name} />
                     ))}

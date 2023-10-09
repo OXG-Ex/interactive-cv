@@ -1,3 +1,4 @@
 export type TMainInfoProps = {
-    fullName?: string;
+    fullName: string;
+    avatarUrl: string;
 };

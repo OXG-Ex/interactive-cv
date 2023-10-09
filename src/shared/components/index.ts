@@ -1,2 +1,2 @@
-export { default as IconLabel } from './IconLabel';
+export { default as IconLink } from './IconLink';
 export { default as Chips } from './Chips';
