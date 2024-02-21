@@ -21,32 +21,32 @@ const MainInfo: React.FC<TMainInfoProps> = (props) => {
                 <Stack gap={2} width="100%">
                     <Chip
                         color="primary"
-                        label="Привет, я"
+                        label="Здравствуйте, я"
                         variant="outlined"
                         sx={{ borderBottomLeftRadius: 0, fontSize: '16px', width: 'fit-content' }}
                     />
                     <Stack gap={1}>
                         <Typography variant="h2">{currentText}</Typography>
                         <Typography variant="h4" color="primary">
-                            {'< React-разработчик />'}
+                            {'Педагог начальных классов'}
                         </Typography>
                     </Stack>
 
                     <Stack gap={1} mt={2}>
                         <IconLink
                             icon={<EmailOutlined />}
-                            text={'semes212@gmail.com'}
-                            href="mailto:semes212@gmail.com"
+                            text={'Tymanovaanikeeva@mail.ru'}
+                            href="mailto:Tymanovaanikeeva@mail.ru"
                         />
                         <IconLink
                             icon={<PhoneOutlined />}
-                            text={'8-(999)-690-17-59'}
-                            href="tel:8-(999)-690-17-59"
+                            text={'8-(952)-604-35-52'}
+                            href="tel:89526043552"
                         />
                         <IconLink
                             icon={<LocationOnOutlined />}
-                            text={'г. Ростов-на-Дону, 346787, РФ'}
-                            href="https://maps.app.goo.gl/PfCP18dYahh1h3S8A"
+                            text={'г. Азов, 346787, РФ'}
+                            href="https://maps.app.goo.gl/bVFNxRVEubLUJGnL9"
                         />
                     </Stack>
                     <ContactMeButtons />

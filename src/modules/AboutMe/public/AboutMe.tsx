@@ -1,7 +1,6 @@
 import { Box, Button, Grid, Stack, Typography } from '@mui/material';
 import { Download } from '@mui/icons-material';
-import programmerBackground from '../../../assets/background/programmer.png';
-import { Chips } from '../../../shared/components';
+import programmerBackground from '../../../assets/background/teacher.png';
 
 const AboutMe: React.FC = () => {
     return (
@@ -20,7 +19,7 @@ const AboutMe: React.FC = () => {
                         maxHeight: 'auto',
                         maxWidth: '100%',
                     }}
-                    alt="programmer art"
+                    alt="teacher art"
                     src={programmerBackground}
                 />
             </Grid>
@@ -35,17 +34,18 @@ const AboutMe: React.FC = () => {
                 <Stack gap={4}>
                     <Typography variant="h3">Обо мне</Typography>
                     <Typography variant="body1">
-                        Здравствуйте, я Семён, веб-разработчик из России. У меня богатый опыт в
-                        дизайне, создании и настройке веб-сайтов. Также я владею:
+                        Здравствуйте, меня зовут Дарья. Я педагог начальных классов с уклоном на
+                        психолога. У меня есть опыт работы с детьми разных возрастов, так же опыт
+                        работы с официальными документами.
                     </Typography>
-                    <Chips
+                    {/* <Chips
                         items={['React', 'HTML', 'Less/SCSS/Sass', 'Javascript', 'Typescript']}
-                    />
+                    /> */}
                     <Button
                         variant="outlined"
                         color="primary"
                         endIcon={<Download />}
-                        href="/cv.pdf"
+                        href={`${window.location}cv.pdf`}
                         download
                     >
                         Скачать резюме

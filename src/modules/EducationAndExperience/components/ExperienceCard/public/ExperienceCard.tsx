@@ -12,17 +12,21 @@ import { TExperienceInfo } from '../../../types/TEducationAndExperience';
 import { ArrowForwardIos } from '@mui/icons-material';
 
 const ExperienceCard: React.FC<TExperienceInfo> = (props) => {
-    const { companyName, position, responsibilities, years, country } = props;
+    const { companyName, position, responsibilities, years } = props;
     return (
         <Card sx={{ height: '100%' }} elevation={8}>
             <CardContent>
-                <Stack direction={'row'} gap={1}>
-                    <Typography variant="h5">{`${position} в компании`}</Typography>
-                    <Typography variant="h5" color="primary.main" fontFamily={'cursive'}>
-                        {companyName}
-                    </Typography>
-                    <Typography variant="body2" color="secondary.main">{`(${country})`}</Typography>
+                <Stack direction={'row'} justifyContent={'space-between'} gap={1}>
+                    <Typography variant="h5">{`${position}`}</Typography>
+                    {companyName ? (
+                        <Typography variant="h5" color="primary.main" fontFamily={'cursive'}>
+                            {companyName}
+                        </Typography>
+                    ) : (
+                        <></>
+                    )}
                 </Stack>
+
                 <Typography variant="body1" color="primary.main">
                     {years}
                 </Typography>

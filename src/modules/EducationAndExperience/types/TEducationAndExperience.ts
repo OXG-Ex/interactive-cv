@@ -6,7 +6,7 @@ export type TEducationInfo = {
 };
 
 export type TExperienceInfo = {
-    companyName: string;
+    companyName?: string;
     position: string;
     years: string;
     responsibilities: string[];

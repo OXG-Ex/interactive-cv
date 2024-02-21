@@ -1,9 +1,9 @@
 import { Container, Stack } from '@mui/material';
 import { Fade, Slide } from 'react-awesome-reveal';
 import { StyledBackgroundContainer } from './shared/styled';
-import backgroundImage1 from './assets/background/background_1.jpg';
-import backgroundImage2 from './assets/background/background_2.jpg';
-import backgroundImage3 from './assets/background/background_3.jpg';
+import backgroundImage1 from './assets/background/bg1.jpg';
+import backgroundImage2 from './assets/background/bg2.jpg';
+import backgroundImage3 from './assets/background/bg3.jpg';
 import mapBackground from './assets/background/map-color-overlay.png';
 import avatar from './assets/avatar/Avatar.jpg';
 import {
@@ -24,7 +24,7 @@ function App() {
             <StyledBackgroundContainer applyDarkening backgroundImage={backgroundImage1}>
                 <Fade duration={800}>
                     <Container maxWidth="lg">
-                        <MainInfo avatarUrl={avatar} fullName="Назаренко Семён" />
+                        <MainInfo avatarUrl={avatar} fullName="Аникеева Дарья Витальевна" />
                     </Container>
                 </Fade>
             </StyledBackgroundContainer>
@@ -48,43 +48,22 @@ function App() {
                             projects={[
                                 {
                                     description:
-                                        'super Project_super Project_super Project_super Project_super Project_super Project_super Project_super Project_super Project_super Project_super Project_',
-                                    imageUrl:
-                                        'https://www.techwyse.com/wp-content/uploads/2013/09/static-vs-dinamic-url.jpg',
-                                    link: 'https://github.com/Learus/react-material-ui-carousel',
-                                    name: 'Super Project 1',
-                                    area: 'desktop',
-                                    tags: ['Html, Css', 'JS'],
-                                    type: 'pet_project',
+                                        'Проблема формирования словаря является одной из самых актуальных проблем современного образования. Хорошая речь – важнейшее условие всестороннего полноценного развития детей. Чем богаче и правильнее речь ребенка, тем легче ему высказать свои мысли, тем шире его возможности в познании окружающей действительности, содержательнее и полноценнее отношения со сверстниками и взрослыми, тем активнее осуществляется его психическое развитие.',
+                                    imageUrl: `${window.location}first-project.jpg`,
+                                    link: `${window.location}kursovaya.docx`,
+                                    name: 'Обогащение лексического запаса младших школьников средствами учебных словарей',
+                                    area: 'Курсовая работа',
+                                    tags: ['Учебная работа', 'Исследование'],
+                                    // type: 'Курсовая работа',
                                 },
-
                                 {
                                     description:
-                                        'super Project_super Project_super Project_super Project_super Project_super Project_super Project_super Project_super Project_super Project_super Project_',
-                                    imageUrl:
-                                        'https://mastersoftwaretesting.com/_next/image?url=%2Fblog%2Fstatic-testing-process.png&w=3840&q=75',
-                                    link: 'https://github.com/Learus/react-material-ui-carousel',
-                                    name: 'Super Project 2',
-                                    tags: [
-                                        'SuperLongTagSuperLongTagSuperLongTagSuperLongTag',
-                                        'Css-in-JS1',
-                                        'Css-in-JS2',
-                                        'Css-in-JS3',
-                                        'Css-in-JS4',
-                                        'Css-in-JS5',
-                                        'JS6',
-                                    ],
-                                    type: 'commercial',
-                                },
-
-                                {
-                                    description:
-                                        'super Project_super Project_super Project_super Project_super Project_super Project_super Project_super Project_super Project_super Project_super Project_',
-                                    imageUrl:
-                                        'https://mastersoftwaretesting.com/_next/image?url=%2Fblog%2Fstatic-testing-vs-dynamic-testing.png&w=3840&q=75',
-                                    link: 'https://github.com/Learus/react-material-ui-carousel',
-                                    name: 'Super Project 3',
-                                    area: 'mobile',
+                                        'Коллектив в начальных классах играет очень важную роль в процессе обучения и развития детей. Дети только начинают учиться взаимодействовать с другими людьми. Коллектив помогает им развивать социальные навыки, такие как общение, сотрудничество, умение слушать и уважать других. Так же создает благоприятную учебную среду, где дети могут учиться друг у друга, делиться знаниями и опытом. Это помогает им лучше усваивать материал и развивать свои навыки. Необходимо, что бы педагоги знали данную информацию и учитывали её при работе с младшими школьниками.',
+                                    imageUrl: `${window.location}second-project.jpg`,
+                                    // link: 'https://github.com/Learus/react-material-ui-carousel',
+                                    name: 'Организация коллектива в начальных классах',
+                                    area: 'Тренинг для студентов',
+                                    tags: ['Тренинг'],
                                 },
                             ]}
                         />
@@ -96,43 +75,43 @@ function App() {
                 <SkillsList
                     skills={[
                         {
-                            percent: 82,
-                            title: 'Алкоголизм',
+                            percent: 50,
+                            title: 'Работа с документами',
                             type: SkillType.Hard,
                         },
                         {
-                            percent: 10,
-                            title: 'Жадность до денег',
+                            percent: 75,
+                            title: 'Знание ФГОС и СанПин',
                             type: SkillType.Hard,
                         },
                         {
                             percent: 90,
-                            title: 'Токсичность',
-                            type: SkillType.Hard,
-                        },
-                        {
-                            percent: 55.55555,
-                            title: 'Шизофрения',
-                            type: SkillType.Hard,
-                        },
-                        {
-                            percent: 99,
-                            title: 'Наследие 🤡',
+                            title: 'Cистемное обучение',
                             type: SkillType.Hard,
                         },
                         {
                             percent: 80,
-                            title: 'Самоуверенность',
+                            title: 'Детская психология',
+                            type: SkillType.Hard,
+                        },
+                        {
+                            percent: 77,
+                            title: 'Детская социализация',
+                            type: SkillType.Hard,
+                        },
+                        {
+                            percent: 92,
+                            title: 'Любовь к детям',
                             type: SkillType.Soft,
                         },
                         {
-                            percent: 42,
-                            title: 'Работа в комманде',
+                            percent: 95,
+                            title: 'Ответственность',
                             type: SkillType.Soft,
                         },
                         {
                             percent: 90,
-                            title: 'ЧСВ',
+                            title: 'Пунктуальность',
                             type: SkillType.Soft,
                         },
                     ]}
@@ -145,40 +124,47 @@ function App() {
                         education={[
                             {
                                 description:
-                                    'Шарага_Шарага_Шарага_Шарага_Шарага_Шарага_Шарага_Шарага_Шарага_Шарага_Шарага_Шарага_',
-                                institution: 'ТИ (Филлиал) ДГТУ',
-                                specialization: '09.02.03 ПКС',
-                                years: '2017-2021',
+                                    'Педагогическое образование включает в себя изучение педагогических теорий, методик обучения, психологии обучения, а также практические навыки, необходимые для работы в образовательной сфере.',
+                                institution: 'ГБПОУ РО ДПК филиал в г. Азове',
+                                specialization: '44.02.02 Педагог начальных классов',
+                                years: '2020-2024',
                             },
                             {
                                 description:
-                                    'КУРСЫ_КУРСЫ_КУРСЫ_КУРСЫ_КУРСЫ_КУРСЫ_КУРСЫ_КУРСЫ_КУРСЫ_КУРСЫ_КУРСЫ_КУРСЫ_КУРСЫ_КУРСЫ_',
-                                institution: '[ITVDN]',
-                                specialization: 'React разработчик',
-                                years: '2022',
-                            },
-                            {
-                                description:
-                                    'Вышка_Вышка_Вышка_Вышка_Вышка_Вышка_Вышка_Вышка_Вышка_Вышка_Вышка_Вышка_Вышка_Вышка_Вышка_',
-                                institution: 'ТИ (Филлиал) ДГТУ ',
-                                specialization: '09.03.02 ВТиП',
-                                years: '2021-2025',
+                                    'Психологическое образование в педагогике помогает будущим педагогам лучше понимать поведение и мотивацию учащихся, эффективно общаться с ними, создавать благоприятную учебную среду и решать возможные проблемы в обучении.',
+                                institution: 'ГБПОУ РО ДПК филиал в городе Азове',
+                                specialization: 'Возрастная психология',
+                                years: '2021-2024',
                             },
                         ]}
                         experience={[
                             {
-                                companyName: '7pace',
-                                position: 'FullStack-dev',
-                                responsibilities: ['make', 'some', 'noize'],
-                                years: '2020-2023',
-                                country: 'GE',
+                                companyName: 'МБОУ СОШ 15 г. АЗОВ',
+                                position: 'Педагог',
+                                responsibilities: [
+                                    'Проведение внеурочных занятий ',
+                                    'Проведение уроков и мероприятий в начальных классах',
+                                ],
+                                years: '2021-2023',
                             },
                             {
-                                companyName: 'Sveak',
-                                position: 'Frontend-dev',
-                                responsibilities: ['make', 'some', 'noize'],
-                                years: 'апрель 2023 -  октябрь 2023',
-                                country: 'RU',
+                                companyName: 'ДОЦ "Дмитриадовский',
+                                position: 'Вожатый',
+                                responsibilities: [
+                                    'Работа с детьми различного возраста',
+                                    'Полная ответственность за жизнь и деятельность детей',
+                                    'Организация и проведение мероприятий',
+                                    'Полная системная работа с детьми',
+                                ],
+                                years: 'июнь 2023 - август 2023',
+                            },
+                            {
+                                position: 'Ведущий аниматор детских праздников',
+                                responsibilities: [
+                                    'Организация детских праздников',
+                                    'Проведение мастер классов',
+                                ],
+                                years: 'май 2021 - январь 2023',
                             },
                         ]}
                     />
@@ -192,15 +178,15 @@ function App() {
                 <Container maxWidth="lg">
                     <ContactMe
                         contacts={[
-                            { icon: <Telegram />, info: '@oxgex', title: 'Telegram' },
+                            { icon: <Telegram />, info: '@Tyman_AD', title: 'Telegram' },
                             {
                                 icon: <AlternateEmail />,
-                                info: 'semes212@gamil.com',
+                                info: 'Tymanovaanikeeva@mail.ru',
                                 title: 'Email',
                             },
                             {
                                 icon: <LocalPhone />,
-                                info: '8-(999)-690-17-59',
+                                info: '8-(952)-604-35-52',
                                 title: 'Телефон',
                             },
                         ]}

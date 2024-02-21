@@ -1,7 +1,5 @@
 import { Box, Button, Grid, Stack, Typography } from '@mui/material';
-import { GitHub } from '@mui/icons-material';
 import { Chips } from '../../../../../shared/components';
-import { getProjectTypeTitle, getProjectAreaTitle } from '../helpers';
 import { TProject } from '../../../types/TProjectsList';
 
 const ProjectItem: React.FC<TProject> = (props) => {
@@ -26,22 +24,26 @@ const ProjectItem: React.FC<TProject> = (props) => {
                 <Stack gap={2}>
                     {area && (
                         <Typography variant="h5" color="primary.main" fontWeight={600}>
-                            {getProjectAreaTitle(area)}
+                            {area}
                         </Typography>
                     )}
-                    <Typography variant="h3">{name}</Typography>
-                    {type && <Typography variant="h5">{getProjectTypeTitle(type)}</Typography>}
+                    <Typography variant="h5">{name}</Typography>
+                    {type && <Typography variant="h5">{type}</Typography>}
                     <Typography paragraph>{description}</Typography>
                     {tags?.length && <Chips items={tags} variant="filled" />}
-                    <Button
-                        variant="outlined"
-                        color="primary"
-                        endIcon={<GitHub />}
-                        href={link}
-                        target="_blank"
-                    >
-                        GitHub
-                    </Button>
+                    {link ? (
+                        <Button
+                            variant="outlined"
+                            color="primary"
+                            // endIcon={<GitHub />}
+                            href={link}
+                            target="_blank"
+                        >
+                            Ссылка
+                        </Button>
+                    ) : (
+                        <></>
+                    )}
                 </Stack>
             </Grid>
         </Grid>
