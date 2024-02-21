@@ -1,31 +1,31 @@
-import { DeveloperMode, Html, Terminal } from '@mui/icons-material';
+import { AssignmentInd, AutoStories, CameraOutdoor } from '@mui/icons-material';
 import { Grid, Stack, Typography } from '@mui/material';
 import { Card } from '../components';
 
 const WhatIDo: React.FC = () => {
     return (
         <Stack gap={2} alignItems={'center'}>
-            <Typography variant="h3">Чем я занимаюсь</Typography>
+            <Typography variant="h3">Чем я могу заниматься</Typography>
             <Grid container spacing={2}>
                 <Grid item sm={12} md={4} width="fill-available">
                     <Card
-                        icon={<DeveloperMode color="error" fontSize="large" />}
-                        title="Мобильная разработка"
-                        text="Мобилки_Мобилки_Мобилки_Мобилки_Мобилки_Мобилки_Мобилки_Мобилки_"
+                        icon={<AssignmentInd color="error" fontSize="large" />}
+                        title="Педагог"
+                        text="Педагог начальных классов. Организация урочной, внеурочной и проектной деятельности учащихся"
                     />
                 </Grid>
                 <Grid item sm={12} md={4} width="fill-available">
                     <Card
-                        icon={<Html color="primary" fontSize="large" />}
-                        title="Веб-разработка"
-                        text="САЙТЫ_САЙТЫ_САЙТЫ_САЙТЫ_САЙТЫ_САЙТЫ_САЙТЫ_САЙТЫ_САЙТЫ_"
+                        icon={<AutoStories color="primary" fontSize="large" />}
+                        title="Репетитор"
+                        text="Работа со школьниками младших классов по развитию мышления, знаний, умений и навыков"
                     />
                 </Grid>
                 <Grid item sm={12} md={4} width="fill-available">
                     <Card
-                        icon={<Terminal color="secondary" fontSize="large" />}
-                        title="Десктопная разработка"
-                        text="ДЕСКТОП_ДЕСКТОП_ДЕСКТОП_ДЕСКТОП_ДЕСКТОП_ДЕСКТОП_ДЕСКТОП_ДЕСКТОП__"
+                        icon={<CameraOutdoor color="secondary" fontSize="large" />}
+                        title="Онлайн обучение"
+                        text="Занятия со школьниками младших классов в онлайн режиме. Развитие личностных качеств и критического мышления"
                     />
                 </Grid>
             </Grid>

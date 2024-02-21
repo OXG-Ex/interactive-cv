@@ -3,9 +3,9 @@ export type TProjectArea = 'mobile' | 'web' | 'desktop';
 
 export type TProject = {
     name: string;
-    type?: TProjectType;
-    area?: TProjectArea;
-    link: string;
+    type?: string;
+    area?: string;
+    link?: string;
     tags?: string[];
     description: string;
     imageUrl: string;
