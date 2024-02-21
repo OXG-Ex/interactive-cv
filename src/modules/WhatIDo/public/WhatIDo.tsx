@@ -10,8 +10,8 @@ const WhatIDo: React.FC = () => {
                 <Grid item sm={12} md={4} width="fill-available">
                     <Card
                         icon={<AssignmentInd color="error" fontSize="large" />}
-                        title="Педагог"
-                        text="Педагог начальных классов. Организация урочной, внеурочной и проектной деятельности учащихся"
+                        title="Учитель"
+                        text="Учитель начальных классов. Организация урочной, внеурочной и проектной деятельности учащихся"
                     />
                 </Grid>
                 <Grid item sm={12} md={4} width="fill-available">
