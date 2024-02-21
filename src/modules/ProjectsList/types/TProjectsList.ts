@@ -12,5 +12,5 @@ export type TProject = {
 };
 
 export type TProjectsListProps = {
-    items: TProject[];
+    projects: TProject[];
 };

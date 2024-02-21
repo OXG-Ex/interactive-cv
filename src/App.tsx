@@ -45,7 +45,7 @@ function App() {
                 <Fade>
                     <Container maxWidth="lg">
                         <ProjectsList
-                            items={[
+                            projects={[
                                 {
                                     description:
                                         'super Project_super Project_super Project_super Project_super Project_super Project_super Project_super Project_super Project_super Project_super Project_',
@@ -207,7 +207,6 @@ function App() {
                     />
                 </Container>
             </StyledBackgroundContainer>
-
             <div></div>
         </Stack>
     );

@@ -1,11 +1,11 @@
 import { Box, Button, Grid, Stack, Typography } from '@mui/material';
-import { TProjectItemProps } from '../types/TProjectItem';
 import { GitHub } from '@mui/icons-material';
 import { Chips } from '../../../../../shared/components';
 import { getProjectTypeTitle, getProjectAreaTitle } from '../helpers';
+import { TProject } from '../../../types/TProjectsList';
 
-const ProjectItem: React.FC<TProjectItemProps> = ({ item }) => {
-    const { description, imageUrl, link, name, area, tags, type } = item;
+const ProjectItem: React.FC<TProject> = (props) => {
+    const { description, imageUrl, link, name, area, tags, type } = props;
 
     return (
         <Grid container spacing={3}>
