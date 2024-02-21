@@ -19,7 +19,12 @@ const ExperienceCard: React.FC<TExperienceInfo> = (props) => {
                 <Stack direction={'row'} justifyContent={'space-between'} gap={1}>
                     <Typography variant="h5">{`${position}`}</Typography>
                     {companyName ? (
-                        <Typography variant="h5" color="primary.main" fontFamily={'cursive'}>
+                        <Typography
+                            variant="h5"
+                            color="primary.main"
+                            fontFamily={'cursive'}
+                            align="right"
+                        >
                             {companyName}
                         </Typography>
                     ) : (

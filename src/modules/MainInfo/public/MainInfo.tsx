@@ -28,7 +28,7 @@ const MainInfo: React.FC<TMainInfoProps> = (props) => {
                     <Stack gap={1}>
                         <Typography variant="h2">{currentText}</Typography>
                         <Typography variant="h4" color="primary">
-                            {'Педагог начальных классов'}
+                            {'Учитель начальных классов'}
                         </Typography>
                     </Stack>
 
